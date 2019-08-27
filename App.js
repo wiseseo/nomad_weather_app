@@ -5,20 +5,26 @@ import { black } from 'ansi-colors';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>My name is Jihye Seo!</Text>
-      <Text style={styles.text}>I can do it</Text>
+        <View style={styles.yellowView}></View>
+        <View style={styles.blueview}></View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
+    /*
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center',*/
   },
-  text: {
-    color: 'black'
+  yellowView: {
+    flex: 1,
+    backgroundColor: "yellow"
+  },
+  blueview: {
+    flex:3,
+    backgroundColor: "blue"
   }
 });
